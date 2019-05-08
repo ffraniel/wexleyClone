@@ -1,0 +1,41 @@
+.Back-Button {
+  font-size: 2rem;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.Back-Button:hover {
+  background-color: black;
+  color:white;  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Fullscreen-Art {
+  color: black;
+  animation: fadeIn 0.5s;
+}
+
+
+.prev {
+  text-decoration: none;
+}
+.prev:hover {
+  background-color: black;
+  color:white;
+}
+
+.next {
+  text-decoration: none;
+}
+.next:hover {
+  background-color: black;
+  color:white;
+}
