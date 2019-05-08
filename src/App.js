@@ -11,7 +11,7 @@ function App() {
     <Router>
       <section className="App">
         <nav className="navigation">
-          <h1 className="title">WEXLEY</h1>
+          <h1 className="title">STEPHEN POWELL</h1>
           <Link className="nav-link" to="/">Home</Link>
           <Link className="nav-link" to="/about/">About</Link>
           <Link className="nav-link" to="/contact/">Contact</Link>
