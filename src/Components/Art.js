@@ -14,7 +14,7 @@ const Art = (props) => {
   }, []);
 
   const getArtworks = () => {
-    return fetch('http://localhost:4000/artworks')
+    return fetch('http://localhost:4008/artworks')
       .then(resBuffer => resBuffer.json())
       .then(res => {
         const indexedArt = res.artworks.map((artObj, i) => {
@@ -26,6 +26,10 @@ const Art = (props) => {
         setLoading(false);
       })
       .catch(error => console.log({error}))
+  };
+
+  const imageLoaded = (e) => {
+    console.log(e)
   };
 
 

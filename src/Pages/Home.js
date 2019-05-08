@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
 
   const getArtworks = () => {
-    return fetch('http://localhost:4000/artworks')
+    return fetch('http://localhost:4008/artworks')
       .then(resBuffer => resBuffer.json())
       .then(res => {
         setArtworks(res.artworks);
@@ -24,7 +24,7 @@ const Home = () => {
       {artworks.map((artpiece, index) => {
         const { name, image } = artpiece;
         return (
-          <Link to={`art/${index}`}>
+          <Link to={`art/${index}`} key={name+index}>
             <section className="preview">
               <img className="preview-image" src={image} alt={name} />
               <h4 className="preview-name">{name}</h4>
