@@ -43,10 +43,12 @@ const Art = (props) => {
     <Link className="Back-Button"to="/">x</Link>
       <section className="Art-Piece">
         <img className="Art-Piece-Image" src={`/${image}`} alt={name} />
-        <h4 className="Art-Piece-Name">{name}</h4>
-        <p className="Art-Piece-Details">More information about the piece, it's history, and why the artist likes it</p>
-        <p className="Art-Piece-Materials">Wood, on ash</p>
-        <p className="Art-Piece-Size">12/4</p>
+        <section className="Art-info">
+          <h4 className="Art-Piece-Name">{name}</h4>
+          <p className="Art-Piece-Details">More information about the piece, it's history, and why the artist likes it</p>
+          <p className="Art-Piece-Materials">Wood, on ash</p>
+          <p className="Art-Piece-Size">12/4'</p>
+        </section>
       </section>
     <Link className="prev" to={`/art/${indexNum-1}`} >Prev</Link> / <Link className="next" to={`/art/${indexNum+1}`} >Next</Link>
   </section>

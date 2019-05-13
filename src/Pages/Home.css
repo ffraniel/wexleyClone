@@ -22,12 +22,12 @@
   align-self: center;
   justify-self: center;
   color: white;
-  font-size:1.75rem;
+  font-size:1.5rem;
   font-weight: 400;
 }
 
 .preview:hover .preview-image {
-  filter: brightness(40%);
+  filter: brightness(60%);
 }
 
 .preview:hover .preview-name {
